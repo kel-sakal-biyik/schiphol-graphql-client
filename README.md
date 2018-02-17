@@ -10,6 +10,11 @@ how an Angular application is built.
 Below you can find some information about how you can serve your client side
 application.
 
+But first you need to install `angular-cli`. Installing it globally will make your life
+easier so:
+
+`npm i -g @angular/cli`
+
 Almost everything is set up for you. Go ahead and look at your `flight-list` component.
 It has a template which is populated by a mock in its component. Have your time and 
 play around with it.
