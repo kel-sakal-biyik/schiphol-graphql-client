@@ -1,59 +1,30 @@
 # Schiphol Graphql Client
 
-Looks like you have completed api building part! Nice, now we can
-consume that api.
+Great, now we are listing the upcoming departure flights. I want you to realize a
+few things.
 
-Since not every one of you guys are not familiar with Angular, I did bootstrapped
-the application for you. Our aim to see how Apollo works on client side not to learn
-how an Angular application is built.
+1. You have only one request which returns your flights data. Open your developer 
+tools and observe your network activities. You will see one `graphql` call
+which has all the flights data in its response. Although it is gathered from several
+Schiphol API endpoints.
 
-Below you can find some information about how you can serve your client side
-application.
+2. If you try to go back to your home page from your toolbars `Back` button and from
+there back to flight list page you will realize that there won't be an additional call
+to your GraphQL sever (You need to do this in the same minute, since in every minute our
+request gets changed variables). It will serve you the data from the in-memory cache. There are
+different data fetching policies provided by Apollo. You can look those up from
+[fetch policies](https://www.apollographql.com/docs/react/basics/queries.html#graphql-config-options-fetchPolicy)
 
-But first you need to install `angular-cli`. Installing it globally will make your life
-easier so:
+   You can also download [Apollo Dev Tools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm)
+for Chrome and investigate the client side store and how it is set the data in a normalized way.
+    
+   This tool is also really cool for executing queries against your graphql server. It has a `gaphiql`
+tab that you can browse your schema also.
 
-`npm i -g @angular/cli`
+I have mentioned the fetch policies, but there is also a manual way to update your data with your
+server. Let's build a `Reload` button. You can use `refetch()` method provided by
+`watchQuery` interface.
 
-Almost everything is set up for you. Go ahead and look at your `flight-list` component.
-It has a template which is populated by a mock in its component. Have your time and 
-play around with it.
+If you are done you can continue with the next and final step
 
-After you feel comfortable about how things are working you can start your challenge.
-
-Your challenge is to query your API for flights and list them. Remember, our `/flights`
-endpoint is accepting `scheduledate` and `scheduletime` variables. Your aim is to
-show upcoming flights. Also consider it.
-
-The link below will help you to integrate Apollo:
-
-[Angular Apollo Integration](https://www.apollographql.com/docs/angular/basics/setup.html#gql)
-
-*NOTE: Be sure that your server is running!*
-
-Good luck!
-
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`git co step-2`
