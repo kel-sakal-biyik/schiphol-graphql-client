@@ -23,6 +23,6 @@ export class FlightListComponent implements OnInit {
           country: 'Bulgaria'
         }
       }
-    ]
+    ];
   }
 }
