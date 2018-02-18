@@ -45,4 +45,8 @@ export class FlightListComponent implements OnInit {
       fetchPolicy: 'cache-first'
     });
   }
+
+  refetch () {
+    this.flightData.refetch();
+  }
 }
