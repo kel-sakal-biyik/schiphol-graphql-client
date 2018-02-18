@@ -33,7 +33,11 @@ The link below will help you to integrate Apollo:
 
 Good luck!
 
+When you are done or stuck just go to the step-1
 
+`git co step-1`
+
+# Angular CLI help
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
