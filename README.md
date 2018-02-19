@@ -3,8 +3,8 @@
 Looks like you have completed api building part! Nice, now we can
 consume that api.
 
-Since not every one of you guys are not familiar with Angular, I did bootstrapped
-the application for you. Our aim to see how Apollo works on client side not to learn
+Since not every one of you guys are familiar with Angular, I bootstrapped
+the application for you. Our aim is to see how Apollo works on client side, not to learn
 how an Angular application is built.
 
 Below you can find some information about how you can serve your client side
