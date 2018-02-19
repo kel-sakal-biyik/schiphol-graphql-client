@@ -18,7 +18,7 @@ different data fetching policies provided by Apollo. You can look those up from
    You can also download [Apollo Dev Tools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm)
 for Chrome and investigate the client side store and how it is set the data in a normalized way.
     
-   This tool is also really cool for executing queries against your graphql server. It has a `gaphiql`
+   This tool is also really cool for executing queries against your graphql server. It has a `graphiql`
 tab that you can browse your schema also.
 
 I have mentioned the fetch policies, but there is also a manual way to update your data with your
